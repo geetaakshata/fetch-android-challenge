@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="header"
+            type="com.example.fetchchallenge.data.model.HeaderUiModel" />
+    </data>
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_background"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="@{header.headerText}"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="@color/header_text" />
+</layout>
